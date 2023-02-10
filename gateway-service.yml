@@ -34,6 +34,22 @@ server:
 spring:
   cloud:
     gateway:
+      x-forwarded:
+        for:
+          enabled: true
+          append: true
+        host:
+          enabled: true
+          append: true
+        port:
+          enabled: true
+          append: true
+        proto:
+          enabled: true
+          append: true
+        prefix:
+          enabled: true
+          append: true
       globalcors:
         cors-configurations:
           "[/**]":
