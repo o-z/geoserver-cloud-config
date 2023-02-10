@@ -15,7 +15,7 @@ server:
       min-spare: ${tomcat.threads.min.spare:10}
       # Maximum amount of worker threads.
       max: ${tomcat.threads.max:200}
-  forward-headers-strategy: FRAMEWORK
+  forward-headers-strategy: NATIVE
 
 spring:
   rabbitmq:
